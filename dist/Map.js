@@ -264,8 +264,11 @@ var Map = /*#__PURE__*/function (_React$Component) {
           // });
 
           var icon = L.divIcon({
-            className: "custom icon",
-            html: ReactDOMServer.renderToString(m.icon_url)
+            html: ReactDOMServer.renderToString("<div style=\"position: relative; text-align: center; width: 30px; height: 30px; line-height: 30px; background-color: red; border-radius: 50%; color: white; font-weight: bold;\">".concat(m.number, "</div>")),
+            className: "numbered-marker-icon",
+            iconSize: [30, 30],
+            iconAnchor: [15, 30] // Point of the icon which will correspond to marker's location
+
           });
           var mk = new L.Marker(position, {
             draggable: draggable,
