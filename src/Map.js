@@ -275,7 +275,8 @@ var Map = /*#__PURE__*/ (function (_React$Component) {
             var icon = L.divIcon({
               html:
                 "<img style='position:relative;width:35px;height:35px' src=" +
-                (m.icon) +
+                m.icon +
+                ">" +
                 '<span style="position: absolute;left:1.5em;right: 1em;top:0.9em;bottom:3em; font-size:9px;font-weight:bold;width: 1px; color:black;" class="my-div-span">' +
                 m.number +
                 "</span>",
@@ -297,7 +298,7 @@ var Map = /*#__PURE__*/ (function (_React$Component) {
 
             if (tooltip) {
               var tooltipContent = tooltip;
-              mk.bindTooltip(tooltipContent); 
+              mk.bindTooltip(tooltipContent);
             }
 
             onDragend && mk.on("dragend", onDragend);
