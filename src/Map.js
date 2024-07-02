@@ -287,7 +287,7 @@ var Map = /*#__PURE__*/ (function (_React$Component) {
 
             var mk = new L.Marker(position, {
               draggable: draggable,
-              title: title,
+              // title: title,
               icon: icon,
             });
 
