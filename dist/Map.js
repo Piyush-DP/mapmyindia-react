@@ -277,12 +277,12 @@ var Map = /*#__PURE__*/function (_React$Component) {
           });
 
           if (title) {
-            var titleContent = ReactDOMServer.renderToString(title);
+            var titleContent = title;
             mk.bindPopup(titleContent);
           }
 
           if (tooltip) {
-            var tooltipContent = ReactDOMServer.renderToString(tooltip);
+            var tooltipContent = tooltip;
             mk.bindTooltip(tooltipContent);
           }
 
