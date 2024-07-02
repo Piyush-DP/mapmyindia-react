@@ -27,7 +27,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _lodash = _interopRequireDefault(require("lodash.isequal"));
 
-var ReactDOMServer = require('react-dom/server');
+var ReactDOMServer = require("react-dom/server");
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -264,7 +264,7 @@ var Map = /*#__PURE__*/function (_React$Component) {
           // });
 
           var icon = L.divIcon({
-            html: ReactDOMServer.renderToString("<div style=\"position: relative; text-align: center; width: 30px; height: 30px; line-height: 30px; background-color: red; border-radius: 50%; color: white; font-weight: bold;\">".concat(m.number, "</div>")),
+            html: "<img style='position:relative;width:35px;height:35px' src=" + m.icon + '<span style="position: absolute;left:1.5em;right: 1em;top:0.9em;bottom:3em; font-size:9px;font-weight:bold;width: 1px; color:black;" class="my-div-span">' + m.number + "</span>",
             className: "numbered-marker-icon",
             iconSize: [30, 30],
             iconAnchor: [15, 30] // Point of the icon which will correspond to marker's location
