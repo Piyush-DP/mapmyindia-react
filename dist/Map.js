@@ -263,8 +263,16 @@ var Map = /*#__PURE__*/function (_React$Component) {
           //   iconSize: [24, 24], // adjust the width and height according to your icon size
           // });
 
+          var left;
+
+          if (m.number > 9 || Number.isInteger(m.number)) {
+            left = "1.3";
+          } else {
+            left = "1.7";
+          }
+
           var icon = L.divIcon({
-            html: "<img style='position:relative;width:35px;height:35px' src=" + m.icon + ">" + '<span style="position: absolute;left:1.7em;right: 1em;top:0.9em;bottom:3em; font-size:9px;font-weight:bold;width: 1px; color:#181818;" class="my-div-span">' + m.number + "</span>",
+            html: "<img style='position:relative;width:35px;height:35px' src=" + m.icon + ">" + "<span style=\"position: absolute;left:".concat(left, "em;right: 1em;top:0.9em;bottom:3em; font-size:9px;font-weight:bold;width: 1px; color:#181818;\" class=\"my-div-span\">") + m.number + "</span>",
             className: "numbered-marker-icon",
             iconSize: [30, 30],
             iconAnchor: [15, 30] // Point of the icon which will correspond to marker's location
