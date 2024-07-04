@@ -265,7 +265,7 @@ var Map = /*#__PURE__*/function (_React$Component) {
 
           var left;
 
-          if (m.number > 9 || Number.isInteger(m.number)) {
+          if (m.number > 9 || !Number.isInteger(m.number)) {
             left = "1.3";
           } else {
             left = "1.7";

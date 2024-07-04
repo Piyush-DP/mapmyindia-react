@@ -272,7 +272,7 @@ var Map = /*#__PURE__*/ (function (_React$Component) {
             //   iconSize: [24, 24], // adjust the width and height according to your icon size
             // });
             let left;
-            if (m.number > 9 || Number.isInteger(m.number)) {
+            if (m.number > 9 || !Number.isInteger(m.number)) {
               left = "1.3";
             } else {
               left = "1.7";
