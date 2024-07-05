@@ -266,7 +266,7 @@ var Map = /*#__PURE__*/function (_React$Component) {
           var fontWeight = m.fontWeight || "bold";
           var fontColor = m.fontColor || "#181818";
           var fontSize = "11px";
-          var left;
+          var left, top;
 
           if (m.number > 9 || !Number.isInteger(m.number)) {
             left = "0.9";
