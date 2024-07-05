@@ -273,19 +273,21 @@ var Map = /*#__PURE__*/ (function (_React$Component) {
             // });
             var fontWeight = m.fontWeight || "bold";
             var fontColor = m.fontColor || "#181818";
-            var fontSize = m.fontSize || "11px";
+            var fontSize = "11px";
             let left;
             if (m.number > 9 || !Number.isInteger(m.number)) {
-              left = "1.3";
+              left = "0.9";
+              top = "0.7";
             } else {
-              left = "1.7";
+              left = "1.3";
+              top = "0.7";
             }
             var icon = L.divIcon({
               html:
                 "<img style='position:relative;width:35px;height:35px' src=" +
                 m.icon +
                 ">" +
-                `<span style="position: absolute;left:${left}em;right: 1em;top:0.9em;bottom:3em; font-size:${fontSize};font-weight:${fontWeight};width: 1px; color:${fontColor};" class="my-div-span">` +
+                `<span style="position: absolute;left:${left}em;right: 1em;top:${top};bottom:3em; font-size:${fontSize};font-weight:${fontWeight};width: 1px; color:${fontColor};" class="my-div-span">` +
                 m.number +
                 "</span>",
               className: "numbered-marker-icon",
