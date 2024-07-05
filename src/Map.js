@@ -273,18 +273,18 @@ var Map = /*#__PURE__*/ (function (_React$Component) {
             // });
             var fontWeight = m.fontWeight || "bold";
             var fontColor = m.fontColor || "#181818";
-            var fontSize = "11px";
-            let left,top;
+            var fontSize = "20px";
+            let left, top;
             if (m.number > 9 || !Number.isInteger(m.number)) {
-              left = "0.9";
-              top = "0.7";
-            } else {
               left = "1.3";
-              top = "0.7";
+              top = "0.9";
+            } else {
+              left = "1.7";
+              top = "1.1";
             }
             var icon = L.divIcon({
               html:
-                "<img style='position:relative;width:35px;height:35px' src=" +
+                "<img style='position:relative;width:80px;height:80px' src=" +
                 m.icon +
                 ">" +
                 `<span style="position: absolute;left:${left}em;right: 1em;top:${top}em;bottom:3em; font-size:${fontSize};font-weight:${fontWeight};width: 1px; color:${fontColor};" class="my-div-span">` +
