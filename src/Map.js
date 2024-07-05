@@ -287,7 +287,7 @@ var Map = /*#__PURE__*/ (function (_React$Component) {
                 "<img style='position:relative;width:35px;height:35px' src=" +
                 m.icon +
                 ">" +
-                `<span style="position: absolute;left:${left}em;right: 1em;top:${top};bottom:3em; font-size:${fontSize};font-weight:${fontWeight};width: 1px; color:${fontColor};" class="my-div-span">` +
+                `<span style="position: absolute;left:${left}em;right: 1em;top:${top}em;bottom:3em; font-size:${fontSize};font-weight:${fontWeight};width: 1px; color:${fontColor};" class="my-div-span">` +
                 m.number +
                 "</span>",
               className: "numbered-marker-icon",
